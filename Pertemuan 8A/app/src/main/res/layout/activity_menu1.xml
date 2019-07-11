@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".Menu1">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Masukkan Dua Angka"
+        android:textSize="18sp" />
+    <EditText
+        android:id="@+id/angka_pertama"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="input bilangan pertama"/>
+    <EditText
+        android:id="@+id/angka_kedua"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="input bilangan kedua"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/tambah"
+            android:paddingTop="10pt"
+            android:paddingBottom="10pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Proses_Tambah"
+            android:text="+"/>
+        <Button
+            android:id="@+id/kurang"
+            android:paddingTop="10pt"
+            android:paddingBottom="10pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Proses_Kurang"
+            android:text="-"/>
+        <Button
+            android:id="@+id/kali"
+            android:paddingTop="10pt"
+            android:paddingBottom="10pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Proses_Kali"
+            android:text="X"/>
+        <Button
+            android:id="@+id/bagi"
+            android:paddingTop="10pt"
+            android:paddingBottom="10pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Proses_Bagi"
+            android:text="/"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/reset"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="Proses_Bersihkan"
+        android:text="Bersihkan"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginLeft="45dp"
+        android:paddingTop="5pt"
+        android:paddingBottom="5pt"
+        android:background="@color/colorPrimary"
+        android:text="HASILNYA"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/tv_tampil"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
